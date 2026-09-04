@@ -15,6 +15,10 @@
 @media (max-width: 639px) {
   [data-slot="card-header"], [data-slot="card-content"] { @apply px-4; }
 }
+@media (min-width: 768px) {
+  aside[aria-label="Finance navigation"]::-webkit-scrollbar { width: 6px; }
+  aside[aria-label="Finance navigation"]::-webkit-scrollbar-thumb { background: var(--muted-foreground); border-radius: 999px; }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
